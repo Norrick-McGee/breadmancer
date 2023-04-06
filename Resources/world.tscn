@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://xa06ukh1f3b4" path="res://Assets/Foreground.png" id="2_062lw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b06md"]
-size = Vector2(480, 24)
+size = Vector2(480, 20)
 
 [node name="World" type="Node2D"]
 
@@ -12,10 +12,12 @@ size = Vector2(480, 24)
 texture = ExtResource("1_xr8pe")
 
 [node name="Foreground" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -1)
 texture = ExtResource("2_062lw")
 
-[node name="GroundBox" type="StaticBody2D" parent="."]
+[node name="GroundBox" type="StaticBody2D" parent="Foreground"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundBox"]
-position = Vector2(0, 123)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foreground/GroundBox"]
+position = Vector2(0, 121)
 shape = SubResource("RectangleShape2D_b06md")
