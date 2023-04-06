@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://eublweenci2w"]
+[gd_scene load_steps=3 format=3 uid="uid://eublweenci2w"]
+
+[ext_resource type="Texture2D" uid="uid://bsgxlkcgl2lvt" path="res://Assets/RobedBrizzard.png" id="1_c0yxy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_as1rf"]
+size = Vector2(24, 30)
 
 [node name="Player" type="CharacterBody2D"]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_as1rf")
+
+[node name="RobedBrizzard" type="Sprite2D" parent="."]
+texture = ExtResource("1_c0yxy")
