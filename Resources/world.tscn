@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://b3ymjtkoulrox"]
+[gd_scene load_steps=2 format=3 uid="uid://b3ymjtkoulrox"]
+
+[ext_resource type="Texture2D" uid="uid://c63q4888q1jfv" path="res://Assets/PurpleSkybox.png" id="1_xr8pe"]
 
 [node name="World" type="Node2D"]
+
+[node name="PurpleSkybox" type="Sprite2D" parent="."]
+texture = ExtResource("1_xr8pe")

@@ -11,3 +11,6 @@
 [node name="World" parent="GameManager" instance=ExtResource("2_22e6o")]
 
 [node name="Player" parent="GameManager" instance=ExtResource("3_le5nc")]
+
+[node name="MainCamera" type="Camera2D" parent="GameManager"]
+zoom = Vector2(4, 4)
