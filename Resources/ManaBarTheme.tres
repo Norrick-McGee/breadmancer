@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b10wgyk4opnec"]
+
+[ext_resource type="Texture2D" uid="uid://r41486p1br6x" path="res://Assets/Scalable-Manabar.png" id="1_42lp7"]
+
+[resource]
+ProgressBar/icons/Sprites = ExtResource("1_42lp7")

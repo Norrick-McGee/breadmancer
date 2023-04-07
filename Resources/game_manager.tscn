@@ -1,3 +1,26 @@
-[gd_scene format=3 uid="uid://dpk4qekt6niqy"]
+[gd_scene load_steps=4 format=3 uid="uid://dpk4qekt6niqy"]
+
+[ext_resource type="PackedScene" uid="uid://b3ymjtkoulrox" path="res://Resources/world.tscn" id="1_uy12r"]
+[ext_resource type="PackedScene" uid="uid://eublweenci2w" path="res://Resources/player.tscn" id="2_2cixo"]
+[ext_resource type="PackedScene" uid="uid://dpi7gff0dr05d" path="res://Resources/game_ui.tscn" id="3_4d5xq"]
 
 [node name="GameManager" type="Node"]
+
+[node name="World" parent="." instance=ExtResource("1_uy12r")]
+
+[node name="MainCamera" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="GameUI" parent="MainCamera" instance=ExtResource("3_4d5xq")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -240.0
+offset_top = -135.0
+offset_right = 242.0
+offset_bottom = 135.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Player" parent="." instance=ExtResource("2_2cixo")]
+position = Vector2(-226, 32)

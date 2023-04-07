@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpi7gff0dr05d"]
+
+[ext_resource type="Texture2D" uid="uid://r41486p1br6x" path="res://Assets/Scalable-Manabar.png" id="1_dohlk"]
+
+[node name="GameUI" type="Control"]
+layout_mode = 3
+anchor_right = 0.249
+anchor_bottom = 0.25
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 3.91998
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Resource" type="TextureProgressBar" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = 234.0
+offset_right = -385.0
+offset_bottom = -16.0
+nine_patch_stretch = true
+stretch_margin_left = 10
+stretch_margin_top = 10
+stretch_margin_right = 10
+stretch_margin_bottom = 10
+texture_under = ExtResource("1_dohlk")
